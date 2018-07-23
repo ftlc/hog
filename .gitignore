@@ -11,5 +11,11 @@
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
 
+# Our executable
+hog
+
 # Markdown Preview
 vim-markdown-preview.html
+
+# Swap files
+*.swp
