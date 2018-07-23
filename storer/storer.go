@@ -1,10 +1,10 @@
 package storer
 
-import "encoding/json"
+import "io"
 
 // Storer writes data collected from Collector to some form
 // of persistent storage
 type Storer interface {
 	initialize() error
-	saveEntries(json json.Encoder, tag string) error
+	saveEntries(json io.Reader, tag string) error
 }
