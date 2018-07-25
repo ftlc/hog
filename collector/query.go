@@ -11,6 +11,7 @@ type Query struct {
 	EndDate      time.Time
 	User         string
 	SearchPhrase string
+	Limit        int
 }
 
 // UnsupportedWarning provides a warning to log to users

@@ -7,6 +7,7 @@ const (
 	dateRange
 	user
 	searchPhrase
+	limit
 )
 
 func (pType parameterType) String() string {
@@ -19,6 +20,8 @@ func (pType parameterType) String() string {
 		return "user"
 	case searchPhrase:
 		return "search phrase"
+	case limit:
+		return "limit"
 	default:
 		return "invalid type"
 	}
